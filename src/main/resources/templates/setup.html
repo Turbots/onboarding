@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Welcome to Tanzu Kubernetes Grid</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Sidebar -->
+<section id="sidebar">
+    <div class="inner">
+        <nav>
+            <ul>
+                <li><a href="#intro">Setup Instructions</a></li>
+                <li><a href="/">Go Back</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner" id="innerReverse">
+            <h1>Setup Instructions</h1>
+            <p>Follow the setup instructions below to get started on your Kubernetes cluster.
+            <ul class="actions">
+                <li><a href="#one" class="button scrolly">Start</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2 spotlights">
+        <section>
+			<a href="#" class="image">
+				<img src="images/development.png" alt="" data-position="top center"/>
+			</a>
+            <div class="content">
+				<h3>Connect to the TKGI API and fetch your credentials</h3>
+                <code class="language-bash">tkgi login -a https://&lt;TKG_API_ENDPOINT&gt; -u USERNAME -p PASSWORD</code>
+                <h3>List the existing clusters</h3>
+                <code class="language-bash">tkgi clusters</code>
+                <h3>Fetch the kubeconfig file for a given cluster</h3>
+                <code class="language-bash">tkgi get-kubeconfig clustername</code>
+                <h3></h3>
+                <code class="language-bash">tkgi get-kubeconfig clustername</code>
+            </div>
+        </section>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+        <ul class="menu">
+            <li>&copy; 2020 VMware Tanzu. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.syntax.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+    jQuery(function($) {
+        $.syntax({theme: 'bright'});
+    });
+</script>
+
+</body>
+</html>
