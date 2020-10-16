@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: onboarding
-          image: docker.io/dhubau/onboarding:bane-nor
+          image: docker.io/dhubau/onboarding:latest
           imagePullPolicy: Always
           livenessProbe:
             initialDelaySeconds: 30
