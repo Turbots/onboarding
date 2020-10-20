@@ -76,7 +76,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>docker.io/dhubau/${project.artifactId}</name>
+                        <name>docker.io/dhubau/${project.artifactId}:ordina</name>
                     </image>
                     <excludeDevtools>true</excludeDevtools>
                 </configuration>
